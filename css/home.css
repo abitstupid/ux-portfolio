@@ -1,0 +1,454 @@
+.heading {
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 600;
+}
+
+.bodyText {
+    font-family: "Marcellus" , serif;
+}
+
+:root {
+    /* margin */
+    --px4-space: 0.25rem;
+    --px8-space: 0.5rem;
+    --px16-space: 1rem;
+    --px48space: 3rem;
+    --px64-space: 4rem;
+    /* text size */
+    --px20-size: 1.25rem;
+    --px36-size: 2.25rem;
+    --px-48-size: 3rem;
+}
+
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0px !important;
+}
+
+.nav {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    display: inline;
+    float: left;
+}
+
+.navLink {
+    display: inline;
+    float: right;
+}
+
+#heroContainer {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes dance {
+    0% {top : 34%}
+    100% {top : 37%}
+}
+
+
+#heroImageContainer {
+    margin-right: 0% !important;
+    transition: ease-in-out 1s;
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    width: 100%;
+}
+
+#heroImageContainer:hover {
+    transform: scale(0.95);
+    transition: ease-in-out 500ms;
+    animation: change-background ease-in-out 400ms;
+    animation-iteration-count: infinite;
+    border-radius: 16px;
+
+}
+
+#heroHeading {
+    flex: 1 1 50%;
+    text-align: center;
+    cursor: default;
+    
+}
+
+#heroHeadingText , #attractive , #usable {
+    font-size: 2.06rem;
+    user-select: none;
+}
+
+#hemant {
+    color: #FF2D9B;
+}
+
+#attractive , #usable {
+    font-family: "DM Serif Display" , serif;
+    color: #983CE9;
+}
+
+#attractive:hover , #usable:hover {
+    color: #fff;
+    animation: change-background 600ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-background {
+        0% {
+            background-color: #ba6cff;
+        }
+        40%{
+            background-color: #b662ff;
+        }
+        100% {
+            background-color: #f578b9;
+        }
+        }
+
+#workHeadingContainer {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#workHomeLogo {
+    height: 20px;
+    float: left;
+}
+
+#workHomeHeading {
+    font-size: 1.125rem;
+}
+
+.workBanner {
+    position: relative;
+    border-radius: 8px;
+    background-color: #F9F1EF;
+    height: 25rem;
+    width: 100%;
+    margin-bottom: 48px;
+    transition: ease-in-out 500ms;
+}
+
+.workBanner:hover  {
+    transform: scale(1.02);
+    transition: ease-in-out 500ms;
+}
+
+.workBanner:hover >.workImage , .workBanner:hover >.workImage2  {
+    transform: scale(1.06);
+    transition: ease-in-out 500ms;
+}
+
+.workImage {
+    position: absolute;
+    height: 100%;
+    top: 5%;
+    left: 35%;  
+    transition: ease-in-out 500ms;
+}
+
+.workImage2 {
+    position: absolute;
+    height: 90%;
+    top: 25%;
+    left: 15%;
+    transition: ease-in-out 500ms;
+}
+
+.workCards {
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.workCard1 {
+    position: relative;
+    width: 50%;
+    height: 20rem;
+    border-radius: 8px;
+    background-color: rgb(255, 196, 196);
+    margin-bottom: 48px;
+    background: url("/components/Landing-\ Signed\ in.png");
+    background-size: cover;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.171);
+}
+
+.card1Button {
+    height: 6rem;
+    width: 70%;
+    position: absolute;
+    top: calc(50% - 3rem);
+    left: 90%;
+    background-color: #983CE9;
+    border-radius: 8px
+}
+
+.workCard2 {
+    position: relative;
+    right: 0px;
+    width: 50%;
+    height: 20rem;
+    border-radius: 8px;
+    background-color: rgb(255, 196, 196);
+    margin-bottom: 2rem;
+    margin-left: auto;
+    background: url("/components/Landing\ page\ _\ Hover\ project.png");
+    background-size: cover;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.171);
+}
+
+/* .workCard1:hover , .workCard2:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.123);
+    transition: ease-in-out 300ms;
+} */
+
+.card1Button:hover , .card2Button:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.212);
+    transition: ease-in-out 300ms;
+}
+
+.card2Button {
+    height: 6rem;
+    width: 70%;
+    position: absolute;
+    top: calc(50% - 3rem);
+    right: 90%;
+    background-color: #983CE9;
+    border-radius: 8px
+}
+
+#pinkTextContainer {
+    height: 48px;
+    background-color: #FF2D9B;
+    font-family: "Marcellus" , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.contactHome {
+    background-color: #983CE9;
+    color: #fff;
+    font-family: "Montserrat" , sans-serif;
+    border-radius: 8px;
+    height: 2.5rem;
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#footer{
+    background: #fff;
+    box-shadow: 0px 0px 34px 4px rgba(0, 0, 0, 0.08);
+}
+
+.footerDiv {
+    display: flex;
+    flex-flow: row nowrap;
+    height: fit-content;
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+#col1 {
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+
+#col2 {
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+
+.thanksText {
+    font-size: var(--px20-size);
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.fontChoice {
+    font-family: "Marcellus" , sans-serif;
+    font-size: 0.9rem;
+    color: #983CE9;
+}
+
+.socialMedia {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkDiv {
+    display: inline-block;
+    margin: 0px 4px 0 4px;
+    height: 3rem;
+    width: 3rem;
+    background-color: #983CE9;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    #heroHeadingText , #attractive , #usable {
+        font-size: 2rem;
+    }
+    
+    .workBanner {
+        height: 22rem;
+    }
+
+    .workCard1 , .workCard2 {
+        height: 16rem;
+    }
+
+    .card1Button , .card2Button {
+        height: 3.5rem;
+        width: 55%;
+        top: calc(50% - 1.75rem);
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    body {
+        margin: 2rem;
+    }
+    #heroContainer {
+        flex-flow: column nowrap;
+        height: 70vh;
+    }
+
+    #heroImageContainer {
+        order: 2; 
+        flex: 1 1 auto;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+
+    #heroHeading {
+        order: -1;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #heroHeadingText , #attractive , #usable {
+        font-size: 3.6rem;
+    }
+
+    .workBanner {
+        height: 16rem;
+    }
+
+    .workCard1 , .workCard2 {
+        height: 13rem;
+        width: 60%;
+    }
+
+    .card1Button , .card2Button {
+        height: 4rem;
+        width: 55%;
+        top: calc(50% - 2rem);
+    }
+    
+    .contactHome {
+        height: 2rem;
+        width: 25%;
+    }
+
+    .footerDiv {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .socialMedia {
+        margin-bottom: 1rem;
+    }
+    
+    .linkDiv {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    
+    
+    #heroHeadingText , #attractive , #usable {
+        font-size: 1.5rem;
+    }
+
+    .workBanner {
+        height: 12rem;
+    }
+
+    .workCard1 , .workCard2 {
+        height: 10rem;
+    }
+
+    .contactHome {
+        height: 2rem;
+        width: 30%;
+    }
+
+    .card1Button , .card2Button {
+        height: 3rem;
+        width: 60%;
+        top: calc(50% - 1.5rem);
+    }
+
+    
+}
+
+@media only screen and (max-width: 576px) {
+
+    .workBanner {
+        height: 10rem;
+    }
+
+    .workCard1 , .workCard2 {
+        height: 8rem;
+    }
+    
+    .contactHome {
+        height: 2rem;
+        width: 40%;
+    }
+}
