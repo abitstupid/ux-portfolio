@@ -288,6 +288,7 @@ body {
     align-items: center;
     margin-bottom: 2rem;
     cursor: pointer;
+    transition: ease-in-out 300ms;
 }
 
 .contactHome:hover {
