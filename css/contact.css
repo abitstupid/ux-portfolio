@@ -251,9 +251,7 @@ input:focus , textarea:focus {
         margin: 2rem;
     }
     
-    .container {
-        height: ;
-    }
+    
 
     .contactHome {
         height: 2rem;
@@ -290,6 +288,12 @@ input:focus , textarea:focus {
         width: 50%;
         color: #fff;
     }
+
+    .card2Button {
+        width: 40%;
+        height: 4.5rem;
+        text-align: center;
+    }
     
 }
 
@@ -315,5 +319,10 @@ input:focus , textarea:focus {
     .submit {
         width: 60%;
         color: #fff;
+    }
+
+    .card2Button {
+        width: 60%;
+        font-size: 0.8rem;
     }
 }

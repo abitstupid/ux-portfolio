@@ -188,6 +188,7 @@ body {
 .workCards {
     margin-bottom: 48px;
     position: relative;
+    height: 100%;
 }
 
 .workCard1 {
@@ -216,7 +217,6 @@ body {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
-    
     transition: ease-in-out 300ms;
 }
 
@@ -260,7 +260,6 @@ body {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
-    
     transition: ease-in-out 300ms;
 }
 
@@ -273,7 +272,10 @@ body {
     justify-content: center;
     color: #fff;
     margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
 }
+
 
 .contactHome {
     background-color: #983CE9;
@@ -383,32 +385,6 @@ body {
     body {
         margin: 2rem;
     }
-    #heroContainer {
-        flex-flow: column nowrap;
-        height: 70vh;
-    }
-
-    #heroImageContainer {
-        order: 2; 
-        flex: 1 1 auto;
-    }
-
-    .heroImage {
-        width: 60%;
-    }
-
-    #heroHeading {
-        order: -1;
-        flex: 1 1 auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    #heroHeadingText , #attractive , #usable {
-        font-size: 3.6rem;
-    }
 
     .workBanner {
         height: 16rem;
@@ -447,13 +423,35 @@ body {
 
 @media only screen and (max-width:768px) {
     
-    
+    #heroContainer {
+        flex-flow: column nowrap;
+        height: 70vh;
+    }
+
+    #heroImageContainer {
+        order: 2; 
+        flex: 1 1 auto;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+
+    #heroHeading {
+        order: -1;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     #heroHeadingText , #attractive , #usable {
         font-size: 1.5rem;
     }
 
     .workBanner {
-        height: 12rem;
+        height: 14rem;
     }
 
     .workCard1 , .workCard2 {
@@ -467,8 +465,9 @@ body {
 
     .card1Button , .card2Button {
         height: 3rem;
-        width: 60%;
+        width: 70%;
         top: calc(50% - 1.5rem);
+        
     }
 
     
@@ -481,11 +480,27 @@ body {
     }
 
     .workCard1 , .workCard2 {
-        height: 8rem;
+        height: 10rem;
     }
     
     .contactHome {
         height: 2rem;
         width: 40%;
     }
+
+    .card1Button , .card2Button {
+        height: 3rem;
+        width: 70%;
+        top: calc(50% - 1.5rem);
+        font-size: 0.8rem;
+    }
+
+    .contactHome {
+        font-size: 0.8rem;
+    }
+
+    #pinkTextContainer {
+        font-size: 0.8rem;
+    }
+
 }

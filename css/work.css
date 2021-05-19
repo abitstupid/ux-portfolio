@@ -144,7 +144,6 @@ body {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
-    
     transition: ease-in-out 300ms;
 }
 
@@ -188,33 +187,9 @@ body {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
-    
     transition: ease-in-out 300ms;
 }
 
-
-
-.contactHome {
-    background-color: #983CE9;
-    color: #fff;
-    font-family: "Montserrat" , sans-serif;
-    border-radius: 8px;
-    height: 2.5rem;
-    width: 15%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-
-.contactHome:hover {
-    transform: scale(1.02);
-    border-radius: 8px;
-    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.158); 
-    transition: ease-in-out 300ms;
-}
 
 #footer{
     background: #fff;
@@ -338,10 +313,16 @@ body {
     
     .workBanner {
         height: 60vh;
+        margin-bottom: 32px;
     }
 
+    .bannerContainer {
+        margin-bottom: 24px;
+    }
+    
+    
     .workCard1 , .workCard2 {
-        height: 13rem;
+        height: 10rem;
     }
 
     .contactHome {
@@ -351,9 +332,8 @@ body {
 
     .card1Button , .card2Button {
         height: 3rem;
-        width: 60%;
+        width: 70%;
         top: calc(50% - 1.5rem);
-        font-size: 1rem;
     }
 
     .workImage {
@@ -381,6 +361,11 @@ body {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .bannerContainer {
+        margin-bottom: 24px;
     }
 
     .workImage , .workImage2 {
@@ -388,8 +373,9 @@ body {
     }
 
     .workCard1 , .workCard2 {
-        height: 18rem;
-        width: 70%;
+        height: 10rem;
+        /* width: 70%; */
+        
     }
 
     .workImage {
@@ -400,17 +386,13 @@ body {
         height: 50%;
     }
 
-    .contactHome {
-        height: 2rem;
-        width: 40%;
-    }
-
     .card1Button , .card2Button {
-        height: rem;
-        width: 65%;
+        height: 3rem;
+        width: 70%;
         top: calc(50% - 1.5rem);
-        font-size: 1rem;
-    }
+        font-size: 0.8rem;
+        }
+
 
     .card1Button {
         left: 70%;
