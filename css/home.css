@@ -1,3 +1,7 @@
+/* * {
+    user-select: ;
+} */
+
 .heading {
     font-family: "Montserrat" , sans-serif;
     font-weight: 600;
@@ -156,7 +160,8 @@ body {
     width: 100%;
     margin-bottom: 48px;
     transition: ease-in-out 500ms;
-    cursor: pointer;
+    cursor: default;
+    user-select: none;
 }
 
 .workBanner:hover  {
@@ -183,6 +188,30 @@ body {
     top: 25%;
     left: 15%;
     transition: ease-in-out 500ms;
+}
+
+.cardProjectHome {
+    height: 5rem;
+    width: 25%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #983CE9;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    z-index: 100;
+}
+
+.cardProjectHome:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.116); 
+    transition: ease-in-out 300ms;
 }
 
 .workCards {
@@ -379,6 +408,11 @@ body {
         width: 55%;
         top: calc(50% - 1.75rem);
     }
+
+    .cardProjectHome {
+        height: 3.5rem;
+        width: 25%;
+    }
 }
 
 @media only screen and (max-width: 995px) {
@@ -399,6 +433,11 @@ body {
         height: 4rem;
         width: 55%;
         top: calc(50% - 2rem);
+    }
+
+    .cardProjectHome {
+        height: 3.5rem;
+        width: 25%;
     }
     
     .contactHome {
@@ -465,9 +504,14 @@ body {
 
     .card1Button , .card2Button {
         height: 3rem;
-        width: 70%;
+        width: 60%;
         top: calc(50% - 1.5rem);
         
+    }
+
+    .cardProjectHome {
+        height: 3rem;
+        width: 35%;
     }
 
     
@@ -493,6 +537,13 @@ body {
         width: 70%;
         top: calc(50% - 1.5rem);
         font-size: 0.8rem;
+    }
+
+    .cardProjectHome {
+        height: 3rem;
+        width: 35%;
+        font-size: 0.8rem;
+        text-align: center;
     }
 
     .contactHome {
