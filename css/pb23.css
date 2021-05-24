@@ -1,0 +1,268 @@
+/* @font-face {
+    font-family: 'Megante';
+    src: url("/components/Meganté.ttf") format(truetype);
+    font-weight: normal;
+} */
+
+*:link , *:visited , *:hover ,  *:active {
+    text-decoration: none;
+}
+
+*:link , *:visited {
+    color: #983CE9;
+}
+
+
+.heading {
+    font-family: 'Montserrat' , sans-serif;
+    color: #983CE9;
+}
+
+.buttonText {
+    font-family: "Work Sans" , sans-serif;
+}
+
+.bodyText {
+    font-family: "Work Sans" , serif;
+    line-height: 1.8;
+}
+
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0px !important;
+}
+
+.nav {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+} 
+
+.heroContainer {
+    height: 100vh;
+    width: 100%;
+}
+
+.heroDiv {
+    height: 70%;
+    width: 100%;
+    background-color: #F9F1EF;
+    position: relative;
+}
+
+.heroImage {
+    position: relative;
+    bottom: 5%;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    -webkit-animation: updown 1s infinite alternate;
+    animation: updown 1s infinite alternate;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 6%;
+    }
+    100% {
+        bottom: 10%;
+    }
+}
+.aboutDiv , .horizontalRule , .projectInfo , .problemsDiv , .goalsDiv , .processContainer , .problemsIa {
+    margin-bottom: 52px;
+    padding: 1rem;
+}
+
+.roleDiv {
+    margin-bottom: 24px;
+}
+
+.headingAbout , .headingProblems , .headingGoals , .headingProcess , .headingIa{
+    padding-left: 5rem;
+    margin-bottom: 16px;
+}
+
+.textAbout , .textProblems , .textGoals , .textIa {
+    padding-left: 20rem;
+    text-align: justify;    
+}
+
+.memeProblemsImg , .memeIaImg {
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.roleDiv {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow: row nowrap;
+}
+
+.myRole , .memeRole {
+    flex: 1 1 50%;
+    background-color: #F9F1EF;
+    padding: 1rem;
+}
+
+.myrole {
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 8px;
+}
+
+.memerole {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.memeProblems , .memeInformation {
+    margin-top: 48px;
+}
+
+.myRoleHeading {
+    padding-left: 5rem;
+}
+
+.role {
+    padding-left: 20rem;
+}
+
+.memeRoleImg {
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.projectInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.clientDiv , .completedDiv , .toolsDiv {
+    flex: 1 1 33%;
+    padding-left: 5rem;
+}
+
+.goalsDiv {
+    background-color: #F9F1EF;
+    padding: 1rem;
+}
+
+.horizontalRule {
+    height: 25rem;
+    background-color: #983CE9;
+}
+
+#footer{
+    background: #fff;
+    box-shadow: 0px 0px 34px 2px rgba(0, 0, 0, 0.103);
+}
+
+.footerDiv {
+    display: flex;
+    flex-flow: row nowrap;
+    height: fit-content;
+    padding: 1rem;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+#col1 {
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+
+#col2 {
+    flex: 1 1 50%;
+    padding: 1rem;
+}
+
+.thanksText {
+    font-size: var(--px20-size);
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.fontChoice {
+    font-family: "Marcellus" , sans-serif;
+    font-size: 0.9rem;
+    color: #983CE9;
+}
+
+.socialMedia {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkDiv {
+    display: inline-block;
+    margin: 0px 4px 0 4px;
+    height: 3rem;
+    width: 3rem;
+    background-color: #983CE9;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width:1200px) {
+
+
+}
+
+@media only screen and (max-width: 995px) {
+    body {
+        margin: 2rem;
+    }
+
+    .footerDiv {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .socialMedia {
+        margin-bottom: 1rem;
+    }
+    
+    .linkDiv {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    
+
+    
+}
+
+@media only screen and (max-width: 576px) {
+
+
+}

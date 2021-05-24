@@ -1,3 +1,10 @@
+*:link , *:visited , *:hover ,  *:active {
+    text-decoration: none;
+}
+
+*:link , *:visited {
+    color: #983CE9;
+}
 
 .heading {
     font-family: "Montserrat" , sans-serif;
@@ -41,9 +48,11 @@ body {
     width: 100%;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo {
+/* .logo {
     display: inline;
     float: left;
 }
@@ -51,13 +60,13 @@ body {
 #logo {
     font-weight: 900;
 }
-
+*/
 .navLink {
-    display: inline;
-    float: right;
+    display: inline-block;
     margin-left: 8px;
     margin-right: 8px;
-}
+} 
+
 
 /* .workHeading {
     position: absolute;
@@ -117,9 +126,10 @@ body {
 
 .cardProjectHome:hover {
     transform: scale(1.03);
-    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.116); 
+    /* box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.116);  */
     transition: ease-in-out 300ms;
 }
+
 .workImage {
     position: absolute;
     height: 90%;
@@ -274,6 +284,12 @@ body {
     border-radius: 8px;
 }
 
+@media only screen and (max-height:500px) {
+    .bannerContainer {
+        height: 30rem;
+    }
+}
+
 @media only screen and (max-width:1200px) {
 
     
@@ -286,7 +302,7 @@ body {
     }
 
     .cardProjectHome {
-        height: 3.5rem;
+        height: 4rem;
         width: 25%;
     }
 
@@ -312,9 +328,26 @@ body {
     }
 
     .workCard1 , .workCard2 {
-        height: 13rem;
+        height: 17rem;
         width: 60%;
     }
+
+    .workImage {
+        position: absolute;
+        height: 70%;
+        top: 5%;
+        left: 35%;  
+        transition: ease-in-out 500ms;
+    }
+    
+    .workImage2 {
+        position: absolute;
+        height: 65%;
+        top: 25%;
+        left: 15%;
+        transition: ease-in-out 500ms;
+    }
+    
 
     .card1Button , .card2Button {
         height: 4rem;
@@ -359,18 +392,21 @@ body {
     }
 
     .workCard1 , .workCard2 {
-        height: 10rem;
+        height: 18rem;
+        width: 100%;
     }
 
     .contactHome {
-        height: 2rem;
-        width: 30%;
+        height: 3rem;
+        width: 40%;
     }
 
     .card1Button , .card2Button {
         height: 3rem;
         width: 60%;
         top: calc(50% - 1.5rem);
+        left: 10%;
+        top: 75%;
     }
 
     .workImage {
@@ -438,11 +474,11 @@ body {
         }
 
 
-    .card1Button {
-        left: 70%;
-    }
-
-    .card2Button {
-        right: 70%;
-    }
-}
+        .card1Button , .card2Button {
+            height: 3rem;
+            width: 70%;
+            top: calc(50% - 1.5rem);
+            font-size: 0.8rem;
+            left: 10%;
+            top: 75%;
+        }
