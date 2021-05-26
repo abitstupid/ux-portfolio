@@ -467,12 +467,26 @@ body {
         /* align-items: center; */
         /* text-align: center; */
         flex-flow: row nowrap;
+        padding : 1rem;
     }
 
+    .myRole {
+        flex: 1 1 50%;
+        background-color: #F9F1EF;
+        padding-left: 5rem;
+    }
+
+    .myRoleHeading {
+        margin-bottom: 0px;
+    }
     .projectInfo {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
+    }
+
+    .role {
+        padding-left: 10rem;
     }
 
     .clientDiv , .completedDiv , .toolsDiv {
