@@ -183,6 +183,15 @@ body {
     transition: ease-in-out 500ms;
 }
 
+.workMeme {
+    margin-bottom: 48px;
+}
+
+.workMemeImg {
+    display: block;
+    margin: 0 auto;
+}
+
 .workImage {
     position: absolute;
     height: 100%;
