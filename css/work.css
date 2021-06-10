@@ -6,17 +6,22 @@
     color: #983CE9;
 }
 
+a.cardWhiteLink {
+    color: #fff;
+}
+
 .heading {
-    font-family: "Montserrat" , sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat' , sans-serif;
+    /* color: #983CE9; */
 }
 
 .buttonText {
-    font-family: "Montserrat" , sans-serif;
+    font-family: "Work Sans" , sans-serif;
 }
 
 .bodyText {
-    font-family: "Marcellus" , serif;
+    font-family: "Work Sans" , serif;
+    line-height: 1.8;
 }
 
 :root {
@@ -35,9 +40,16 @@
 * { 
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    caret-color: #983CE9;
 }
 
-body {
+*::selection {
+    background-color: #bd84f0;
+    color: #ffffff;
+}
+
+main , header{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 0px !important;
@@ -126,7 +138,7 @@ body {
 
 .cardProjectHome:hover {
     transform: scale(1.03);
-    /* box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.116);  */
+    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.062); 
     transition: ease-in-out 300ms;
 }
 
@@ -158,7 +170,7 @@ body {
     border-radius: 8px;
     background-color: rgb(255, 196, 196);
     margin-bottom: 48px;
-    background: url("/components/Landing-\ Signed\ in.png");
+    background: url("/components/Projects/Pb-23/Home.png");
     background-size: cover;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.171);
 }
@@ -227,13 +239,14 @@ body {
 #footer{
     background: #fff;
     box-shadow: 0px 0px 34px 2px rgba(0, 0, 0, 0.103);
+    padding: 0 5%;
 }
 
 .footerDiv {
     display: flex;
     flex-flow: row nowrap;
     height: fit-content;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
     padding-bottom: 0px;
 }
@@ -314,7 +327,7 @@ body {
 }
 
 @media only screen and (max-width: 995px) {
-    body {
+    main , header {
         margin: 2rem;
     }
 
@@ -348,7 +361,13 @@ body {
         transition: ease-in-out 500ms;
     }
     
+    .workMeme {
+        width: 100%;
+    }
 
+    .workMemeImg {
+        width: 5rem;
+    }
     .card1Button , .card2Button {
         height: 4rem;
         width: 55%;
@@ -443,7 +462,7 @@ body {
 
     .cardProjectHome {
         height: 3rem;
-        width: 35%;
+        width: 45%;
         font-size: 0.8rem;
         text-align: center;
     }
@@ -482,3 +501,4 @@ body {
             left: 10%;
             top: 75%;
         }
+}

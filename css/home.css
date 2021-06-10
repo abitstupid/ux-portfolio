@@ -8,17 +8,19 @@
 
 
 
+
 .heading {
-    font-family: "Montserrat" , sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat' , sans-serif;
+    /* color: #983CE9; */
 }
 
 .buttonText {
-    font-family: "Montserrat" , sans-serif;
+    font-family: "Work Sans" , sans-serif;
 }
 
 .bodyText {
-    font-family: "Marcellus" , serif;
+    font-family: "Work Sans" , serif;
+    line-height: 1.8;
 }
 
 :root {
@@ -37,9 +39,16 @@
 * { 
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    caret-color: #983CE9;
 }
 
-body {
+*::selection {
+    background-color: #bd84f0;
+    color: #ffffff;
+}
+
+main , header {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 0px !important;
@@ -78,12 +87,39 @@ body {
     align-items: center;
 }
 
+/* #heroHeadingText:hover {
+    animation: hoverGradient ease-in-out 2000ms;
+    animation-iteration-count: infinite;
+    color: #fff;
+    transition: ease-in-out 900ms;
+} */
+
 @keyframes dance {
     0% {top : 34%}
     100% {top : 37%}
 }
 
+/* @keyframes hoverGradient {
+    0% {
+        background: linear-gradient(45deg , #993ae28e rgba(255, 172, 215, 0.514));
+        transition: ease-in-out 900ms;
+    }
 
+    30% {
+        background: linear-gradient(90deg , #a946f577 , #ff008465);
+    }
+    50% {
+        background: linear-gradient(110deg , #a946f577 , #ff008465);
+    }
+    70% {
+        background: linear-gradient(180deg , #a946f577 , #ff008465);
+    }
+
+    100% {
+        background: linear-gradient(45deg , #a946f577 , #ff008465);
+        transition: ease-in-out 900ms;
+    }
+} */
 
 #heroImageContainer {
     margin-right: 0% !important;
@@ -102,7 +138,8 @@ body {
 #heroImageContainer:hover {
     transform: scale(0.95);
     transition: ease-in-out 500ms;
-    animation: change-background ease-in-out 400ms;
+    animation: change-background ease-in-out 400ms ,
+                largeSmall ease-in-out 600ms;
     animation-iteration-count: infinite;
     border-radius: 16px;
 
@@ -116,8 +153,8 @@ body {
 }
 
 #heroHeadingText , #attractive , #usable {
-    font-size: 2.8rem;
-    user-select: none;
+    font-size: 2.5rem;
+    /* user-select: none; */
 }
 
 #hemant {
@@ -147,6 +184,15 @@ body {
         }
         }
 
+    @keyframes largeSmall {
+        0% {
+            transform: scale(0.999);
+        }
+
+        100% {
+            transform: scale(1.025);
+        }
+        }
 #workHeadingContainer {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
@@ -188,6 +234,7 @@ body {
 }
 
 .workMemeImg {
+    width: 20%;
     display: block;
     margin: 0 auto;
 }
@@ -350,13 +397,14 @@ body {
 #footer{
     background: #fff;
     box-shadow: 0px 0px 34px 2px rgba(0, 0, 0, 0.103);
+    padding: 0 5%;
 }
 
 .footerDiv {
     display: flex;
     flex-flow: row nowrap;
     height: fit-content;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
     padding-bottom: 0px;
 }
@@ -440,7 +488,7 @@ body {
 }
 
 @media only screen and (max-width: 995px) {
-    body {
+    main , header {
         margin: 2rem;
     }
 
