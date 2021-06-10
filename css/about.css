@@ -283,6 +283,9 @@ main , header {
     border-radius: 8px;
 }
 
+.linkDiv {
+    padding : 0.19rem;
+}
 /* @media only screen and (min-width:1201px) {
 
     
@@ -292,20 +295,25 @@ main , header {
 
 } */
 
+
 @media only screen and (max-height:450px) {
     .container {
         height: 30rem;
     }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (min-width: 996px) {
+
+    .selfTaught {
+        font-size: 1rem;    
+    }
 
     .container {
         position: relative;
-        /* height: 80vh; */
+        height: 33rem;
+        width: 100%;
+        margin-bottom: 48px;
     }
-
-
 }
 
 @media only screen and (max-width: 995px) {
@@ -315,6 +323,7 @@ main , header {
 
     .container {
         position: relative;
+        height: 33rem;
     }
     
     .contactHome {

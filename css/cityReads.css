@@ -556,8 +556,7 @@ header , main {
         display: block;
         margin: 0 auto;
     }
-    
-}   
+}  
 
 
 p.personaName {
@@ -595,4 +594,12 @@ p.personaName {
 .goalsAccom {
     width: 90%;
     
+}
+
+.painPoint1::before , .goal1::before {
+        content:"• ";
+}
+
+.linkDiv {
+    padding : 0.19rem;
 }

@@ -272,6 +272,10 @@ header , main {
     border-radius: 8px;
 }
 
+.linkDiv {
+    padding : 0.19rem;
+}
+
 @media only screen and (max-height:500px) {
     .heroContainer {
         height: 25rem;
