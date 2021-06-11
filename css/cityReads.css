@@ -358,6 +358,12 @@ header , main {
 
 }
 
+@media only screen and (max-width: 767px) {
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
 
 @media only screen and (min-width:768px) {
     /* body {
@@ -602,4 +608,12 @@ p.personaName {
 
 .linkDiv {
     padding : 0.19rem;
+}
+
+.processRoadmap {
+    width: 100%;
+}
+
+.processImg {
+    width: 100%;
 }

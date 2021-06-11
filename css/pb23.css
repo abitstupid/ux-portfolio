@@ -192,6 +192,14 @@ header , main {
     background-color: #983CE9;
 }
 
+.processRoadmap {
+    width: 100%;
+}
+
+.processImg {
+    width: 100%;
+}
+
 .IaPhoto {
     height: 100%;
     width: 100%;
@@ -362,6 +370,11 @@ header , main {
         margin-top: 0%;
     } */
 
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
     .heroImage {
         position: relative;
         bottom: 0%;

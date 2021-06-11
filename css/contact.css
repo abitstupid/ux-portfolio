@@ -309,6 +309,11 @@ input , textarea {
 
 @media only screen and (max-width:769px) {
     
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
     main , header {
         margin: 1rem;
     }

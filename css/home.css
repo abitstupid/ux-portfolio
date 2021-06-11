@@ -227,7 +227,7 @@ main , header {
 
 .workImage {
     position: absolute;
-    height: 100%;
+    height: 85%;
     top: 5%;
     left: 35%;  
     transition: ease-in-out 500ms;
@@ -235,7 +235,7 @@ main , header {
 
 .workImage2 {
     position: absolute;
-    height: 90%;
+    height: 70%;
     top: 25%;
     left: 15%;
     transition: ease-in-out 500ms;
@@ -343,6 +343,11 @@ main , header {
     transition: ease-in-out 300ms;
 }
 
+.seeAllWork {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 #pinkTextContainer {
     height: 48px;
     background-color: #FF2D9B;
@@ -445,14 +450,14 @@ main , header {
     padding : 0.19rem;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (min-width: 996px) {
 
     #heroHeadingText , #attractive , #usable {
         font-size: 2rem;
     }
     
     .workBanner {
-        height: 16rem;
+        height: 30rem;
         /* width: 20rem; */
     }
 
@@ -483,7 +488,7 @@ main , header {
     }
 
     .workBanner {
-        height: 16rem;
+        height: 20rem;
     }
 
     .workCard1 , .workCard2 {
@@ -524,6 +529,11 @@ main , header {
 
 @media only screen and (max-width:768px) {
     
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
     #heroContainer {
         flex-flow: column nowrap;
         height: 70vh;
@@ -552,7 +562,7 @@ main , header {
     }
 
     .workBanner {
-        height: 14rem;
+        height: 16rem;
     }
 
     .workCard1 , .workCard2 {
@@ -578,6 +588,9 @@ main , header {
         width: 35%;
     }
 
+    .workMemeImg {
+        width: 70%;
+    }
     
 }
 

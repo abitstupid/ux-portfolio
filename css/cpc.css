@@ -186,12 +186,21 @@ header , main {
     padding: 1rem;
 }
 
+
 .horizontalRule {
     height: 25rem;
     background: url('/components/Projects/CPC/horizontalRule.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #983CE9;
+}
+
+.processRoadmap {
+    width: 100%;
+}
+
+.processImg {
+    width: 100%;
 }
 
 .IaPhoto {
@@ -277,6 +286,7 @@ header , main {
     width: 3rem;
     background-color: #983CE9;
     border-radius: 8px;
+    padding: 0.19rem;
 }
 
 @media only screen and (max-height:500px) {
@@ -364,7 +374,11 @@ header , main {
         margin: 2rem;
         margin-top: 0%;
     } */
-
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
     .heroImage {
         position: relative;
         bottom: 0%;
