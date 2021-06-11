@@ -362,8 +362,11 @@ main , header {
     #nav {
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: center;
     }
+
+    .downloadCV {
+        justify-self: center;
+}
     
     .container {
         position: relative;
