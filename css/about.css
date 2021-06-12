@@ -363,6 +363,10 @@ main , header {
         flex-flow: column nowrap;
         align-items: center;
     }
+
+    .downloadCV {
+        justify-self: center;
+}
     
     .container {
         position: relative;
