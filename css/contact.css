@@ -156,6 +156,10 @@ input:focus , textarea:focus {
     background-color: #ffffff;
 }
 
+button:focus {
+    background: #983CE9;
+}
+
 .containerButton {
     display: flex;
     justify-content: center;
@@ -250,7 +254,7 @@ input:focus , textarea:focus {
     padding : 0.19rem;
 }
 
-input , textarea {
+input , textarea  {
     padding: 0.5rem;
 }
 /* @media only screen and (min-width:1201px) {
@@ -276,14 +280,12 @@ input , textarea {
         height: 30rem;
     }
 
-
 }
 
 @media only screen and (max-width: 995px) {
     header , main {
         margin: 2rem;
     }
-    
     
 
     .contactHome {

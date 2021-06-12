@@ -25,18 +25,6 @@ a.contactMeLink {
     line-height: 1.8;
 }
 
-:root {
-    /* margin */
-    --px4-space: 0.25rem;
-    --px8-space: 0.5rem;
-    --px16-space: 1rem;
-    --px48space: 3rem;
-    --px64-space: 4rem;
-    /* text size */
-    --px20-size: 1.25rem;
-    --px36-size: 2.25rem;
-    --px-48-size: 3rem;
-}
 
 * { 
     margin: 0px;
@@ -132,13 +120,13 @@ main , header {
     
 }
 
-#attractive , #usable {
-    font-size: 2.5rem;
+#heroHeadingText {
+    font-size: 2.1rem;
     /* user-select: none; */
 }
 
-#heroHeadingText {
-    font-size: 2.1rem;
+#attractive , #usable {
+    font-size: 2.8rem;
     /* user-select: none; */
 }
 
@@ -452,8 +440,14 @@ main , header {
 
 @media only screen and (min-width: 996px) {
 
-    #heroHeadingText , #attractive , #usable {
-        font-size: 2rem;
+    #heroHeadingText {
+        font-size: 2.1rem;
+        /* user-select: none; */
+    }
+    
+    #attractive , #usable {
+        font-size: 2.5rem;
+        /* user-select: none; */
     }
     
     .workBanner {
@@ -529,9 +523,14 @@ main , header {
 
 @media only screen and (max-width:768px) {
     
+    header , main {
+        margin: 1rem;
+    }
+
     #nav {
         flex-flow: column nowrap;
         align-items: center;
+        margin-top: 0.5rem;
     }
 
     #heroContainer {
@@ -557,7 +556,11 @@ main , header {
         align-items: center;
     }
 
-    #heroHeadingText , #attractive , #usable {
+    #heroHeadingText  {
+        font-size: 1.2rem;
+    }
+
+    #attractive , #usable {
         font-size: 1.5rem;
     }
 
