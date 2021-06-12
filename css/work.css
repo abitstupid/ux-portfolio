@@ -104,7 +104,7 @@ main , header{
     width: 100%;
     height: 100%;
     transition: ease-in-out 500ms;
-    cursor: pointer;
+    cursor: auto;
     margin-bottom: 48px;
 }
 

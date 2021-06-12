@@ -366,6 +366,7 @@ main , header {
 
     .downloadCV {
         justify-self: center;
+        align-self: center;
 }
     
     .container {
