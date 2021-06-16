@@ -59,6 +59,15 @@ header , main {
     justify-content: space-between;
 }
 
+.logoImg {
+    height: 3rem;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navLink {
     display: inline-block;
     margin-left: 8px;

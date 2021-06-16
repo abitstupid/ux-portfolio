@@ -64,6 +64,16 @@ main , header{
     justify-content: space-between;
 }
 
+.logoImg {
+    height: 3rem;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* .logo {
     display: inline;
     float: left;

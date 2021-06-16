@@ -62,6 +62,17 @@ main , header {
     font-weight: 900;
 }
 */
+
+.logoImg {
+    height: 3rem;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navLink {
     display: inline-block;
     margin-left: 8px;
@@ -121,12 +132,12 @@ main , header {
 }
 
 #heroHeadingText {
-    font-size: 2.1rem;
+    font-size: 2rem;
     /* user-select: none; */
 }
 
 #attractive , #usable {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     /* user-select: none; */
 }
 
