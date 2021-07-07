@@ -50,6 +50,11 @@ header , main {
     margin-right: 15%;
 }
 
+header nav a:hover {
+    color: #f578b9;
+    transition: ease 400ms;
+}
+
 .nav {
     overflow: auto;
     width: 100%;

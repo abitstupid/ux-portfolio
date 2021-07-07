@@ -6,6 +6,10 @@
     color: #983CE9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a.contactMeLink {
     color: #fff;
 }
@@ -63,6 +67,11 @@ main , header {
 }
 */
 
+header nav a:hover {
+    color: #f578b9;
+    transition: ease 400ms;
+}
+
 .logoImg {
     height: 3rem;
 }
@@ -81,7 +90,7 @@ main , header {
 
 #heroContainer {
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -108,6 +117,7 @@ main , header {
     justify-content: center;
     align-items: center;
     border-radius: 16px;
+    padding: 24px;
 }
 
 .heroImage {
@@ -133,6 +143,7 @@ main , header {
 
 #heroHeadingText {
     font-size: 2rem;
+    text-align: left;
     /* user-select: none; */
 }
 
@@ -147,7 +158,7 @@ main , header {
 
 #attractive , #usable {
     font-family: "DM Serif Display" , serif;
-    color: #983CE9;
+    color: #FF2D9B;
 }
 
 #attractive:hover , #usable:hover {
@@ -184,19 +195,21 @@ main , header {
 }
 
 #workHomeLogo {
-    height: 20px;
+    height:30px;
     float: left;
 }
 
 #workHomeHeading {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
+    color: #983CE9;
+    font-weight: bold;
 }
 
 .workBanner {
     position: relative;
     border-radius: 8px;
     background-color: #F9F1EF;
-    height: 25rem;
+    height: 30rem;
     width: 100%;
     margin-bottom: 48px;
     transition: ease-in-out 500ms;
@@ -277,7 +290,7 @@ main , header {
     border-radius: 8px;
     background-color: rgb(255, 196, 196);
     margin-bottom: 48px;
-    background: url("/components/Landing-\ Signed\ in.png");
+    background: url("/components/Projects/Pb-23/Home.png");
     background-size: cover;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.171);
 }
@@ -345,6 +358,12 @@ main , header {
 .seeAllWork {
     text-align: center;
     margin-bottom: 16px;
+}
+
+.downloadCV {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
 }
 
 #pinkTextContainer {
@@ -493,7 +512,7 @@ main , header {
     }
 
     .workBanner {
-        height: 20rem;
+        height: 25rem;
     }
 
     .workCard1 , .workCard2 {
@@ -576,7 +595,7 @@ main , header {
     }
 
     .workBanner {
-        height: 16rem;
+        height: 25rem;
     }
 
     .workCard1 , .workCard2 {
@@ -611,7 +630,7 @@ main , header {
 @media only screen and (max-width: 576px) {
 
     .workBanner {
-        height: 10rem;
+        height: 20rem;
     }
 
     .workCard1 , .workCard2 {
