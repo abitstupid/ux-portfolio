@@ -321,6 +321,10 @@ header nav a:hover {
         margin-right: 2rem;
     }
 
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 
 
     .heroDiv {
@@ -353,6 +357,11 @@ header nav a:hover {
     /* body {
         margin: 2rem;
     } */
+
+    #nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 
     .heroDiv {
         display: flex;
@@ -480,6 +489,11 @@ header nav a:hover {
 
 @media only screen and (min-width: 995px) {
     
+    #nav {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
     header , main {
         margin-left: 15%;
         margin-right: 15%;
